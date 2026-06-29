@@ -1,0 +1,891 @@
+/*==========================
+  GOOGLE FONT
+==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==========================
+  VARIABLES
+==========================*/
+:root{
+
+    --primary:#2563EB;
+    --primary-dark:#1E3A8A;
+    --secondary:#F59E0B;
+    --light:#F8FAFC;
+    --white:#ffffff;
+    --dark:#0F172A;
+    --gray:#64748B;
+    --border:#E2E8F0;
+
+}
+
+/*==========================
+ RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:var(--dark);
+    overflow-x:hidden;
+
+}
+
+/*==========================
+ NAVBAR
+==========================*/
+
+.navbar{
+
+    padding:18px 0;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.navbar-brand{
+
+    color:var(--primary);
+    font-size:1.4rem;
+    font-weight:700;
+
+}
+
+.navbar-brand i{
+
+    margin-right:8px;
+
+}
+
+.nav-link{
+
+    color:var(--dark);
+    margin-left:18px;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--primary);
+
+}
+
+/*==========================
+ HERO
+==========================*/
+
+.hero{
+
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(255,255,255,.90),rgba(255,255,255,.90)),
+    url("../img/comunicacion.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.hero h5{
+
+    color:var(--primary);
+    letter-spacing:3px;
+    margin-bottom:20px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+    font-weight:800;
+    line-height:1.15;
+
+}
+
+.hero span{
+
+    color:var(--primary);
+
+}
+
+.hero p{
+
+    color:var(--gray);
+    margin:30px 0;
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+.hero-img{
+
+    width:95%;
+    animation:flotar 4s infinite ease-in-out;
+
+}
+
+/*==========================
+ BOTONES
+==========================*/
+
+.btn{
+
+    border-radius:40px;
+    padding:14px 35px;
+    font-weight:600;
+    transition:.4s;
+
+}
+
+.btn-warning{
+
+    background:var(--secondary);
+    border:none;
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(245,158,11,.35);
+
+}
+
+/*==========================
+ SECCIONES
+==========================*/
+
+section{
+
+    padding:110px 0;
+
+}
+
+section h2{
+
+    font-size:2.7rem;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+section p{
+
+    color:var(--gray);
+
+}
+
+/*==========================
+ TARJETAS
+==========================*/
+
+.card{
+
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+    overflow:hidden;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.card-body{
+
+    padding:35px;
+
+}
+
+.card h3{
+
+    color:var(--primary);
+    margin-bottom:20px;
+
+}
+
+/*==========================
+LA SAPA CARAMELO
+==========================*/
+
+#sapa{
+
+    background:#fff;
+
+}
+
+#sapa .card{
+
+    border-radius:20px;
+    transition:.4s;
+
+}
+
+#sapa .card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+#sapa i{
+
+    transition:.4s;
+
+}
+
+#sapa .card:hover i{
+
+    transform:scale(1.15) rotate(-5deg);
+
+}
+/*==========================
+ TITULOS
+==========================*/
+
+.text-center p{
+
+    width:70%;
+    margin:auto;
+
+}
+
+/*==========================
+ SOMBRAS
+==========================*/
+
+.shadow{
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08)!important;
+
+}
+
+/*==========================
+ ANIMACIONES
+==========================*/
+
+@keyframes flotar{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/*==========================
+ EFECTOS
+==========================*/
+
+img{
+
+    max-width:100%;
+
+}
+
+.card{
+
+    position:relative;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,#2563EB,#F59E0B);
+
+    top:0;
+
+    left:0;
+
+}
+
+/*==========================
+ RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+padding-top:140px;
+
+}
+
+.hero h1{
+
+font-size:2.8rem;
+
+}
+
+.hero-img{
+
+margin-top:50px;
+
+width:80%;
+
+}
+
+.text-center p{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:10px;
+
+}
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+section h2{
+
+font-size:2rem;
+
+}
+
+.card{
+
+margin-bottom:25px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero h1{
+
+font-size:1.8rem;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+}
+/*==========================
+FOOTER
+==========================*/
+
+.footer{
+
+    background:#0F172A;
+
+    color:#fff;
+
+    padding:70px 0 20px;
+
+}
+
+.footer h3,
+.footer h4{
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.footer p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+.footer ul{
+
+    padding-left:0;
+
+}
+
+.footer li{
+
+    list-style:none;
+
+    margin-bottom:12px;
+
+}
+
+.footer a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#F59E0B;
+
+    padding-left:6px;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.15);
+
+    margin:30px 0;
+
+}
+
+.footer .text-center p{
+
+    color:#94A3B8;
+
+    margin-bottom:0;
+
+}
+/*==========================
+INTRODUCCIÓN
+==========================*/
+
+#introduccion{
+
+    background:#F8FAFC;
+
+}
+
+#introduccion img{
+
+    border-radius:25px;
+    transition:.4s;
+
+}
+
+#introduccion img:hover{
+
+    transform:scale(1.03);
+
+}
+
+#introduccion .card{
+
+    border-radius:20px;
+
+}
+
+#introduccion .card h3{
+
+    font-weight:700;
+
+}
+
+#introduccion .badge{
+
+    border-radius:30px;
+
+}
+/*==========================
+INTEGRANTES
+==========================*/
+
+.integrante-card{
+
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+
+}
+
+.integrante-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.integrante-card i{
+
+    transition:.4s;
+
+}
+
+.integrante-card:hover i{
+
+    transform:scale(1.1);
+
+}
+
+/*==========================
+APRENDIZAJE
+==========================*/
+
+#aprendizaje{
+
+    background:#F8FAFC;
+
+}
+
+#aprendizaje .card{
+
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+
+}
+
+#aprendizaje .card:hover{
+
+    transform:translateY(-10px);
+
+}
+/*======================================
+TIPOS DE COMUNICACIÓN
+======================================*/
+
+#definicion{
+
+    background:#ffffff;
+
+}
+
+.tipo-card{
+
+    border:none;
+    border-radius:20px;
+    padding:15px;
+    transition:.4s;
+    overflow:hidden;
+    height:100%;
+
+}
+
+.tipo-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.tipo-card i{
+
+    transition:.4s;
+
+}
+
+.tipo-card:hover i{
+
+    transform:scale(1.2) rotate(-8deg);
+
+}
+
+/* Agresiva */
+
+.agresiva{
+
+    border-top:6px solid #dc3545;
+
+}
+
+.agresiva i{
+
+    color:#dc3545;
+
+}
+
+/* Pasiva */
+
+.pasiva{
+
+    border-top:6px solid #6c757d;
+
+}
+
+.pasiva i{
+
+    color:#6c757d;
+
+}
+
+/* Pasivo-agresiva */
+
+.pasivo{
+
+    border-top:6px solid #f59e0b;
+
+}
+
+.pasivo i{
+
+    color:#f59e0b;
+
+}
+
+/* Asertiva */
+
+.asertiva{
+
+    border-top:6px solid #198754;
+
+}
+
+.asertiva i{
+
+    color:#198754;
+
+}
+/*==============================
+EVIDENCIAS
+===============================*/
+
+.evidencia-card{
+
+    border:none;
+    border-radius:20px;
+    transition:.4s;
+
+}
+
+.evidencia-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.evidencia-card i{
+
+    transition:.4s;
+
+}
+
+.evidencia-card:hover i{
+
+    transform:scale(1.15);
+
+}
+/*==========================
+Mini Jakobson
+==========================*/
+
+.jakobson-mini{
+
+background:#fff;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.contexto{
+
+width:220px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+}
+
+.middle{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:15px;
+
+margin-bottom:20px;
+
+}
+
+.bottom{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+.box{
+
+flex:1;
+
+padding:15px;
+
+text-align:center;
+
+border-radius:15px;
+
+background:#f8f9fa;
+
+border:2px solid #E5E7EB;
+
+transition:.3s;
+
+}
+
+.box:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 20px rgba(0,0,0,.10);
+
+}
+
+.box h6{
+
+font-weight:700;
+
+margin-bottom:8px;
+
+}
+
+.box p{
+
+margin:0;
+
+font-size:14px;
+
+color:#198754;
+
+font-weight:600;
+
+}
+
+.mensaje{
+
+border:2px solid #198754;
+
+background:#ECFDF3;
+
+}
+
+.line{
+
+width:2px;
+
+height:18px;
+
+background:#198754;
+
+margin:auto;
+
+margin-bottom:15px;
+
+}
+/*=========================
+FUNCIONES
+==========================*/
+
+.funcion-info{
+
+border:none;
+
+border-radius:18px;
+
+transition:.4s;
+
+height:100%;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.funcion-info:hover{
+
+transform:translateY(-10px);
+
+}
+
+.funcion-info i{
+
+font-size:40px;
+
+color:#16A34A;
+
+margin-bottom:20px;
+
+}
+
+.funcion-info h4{
+
+font-size:22px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
